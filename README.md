@@ -6,7 +6,7 @@ Install this first!
 
  - [Chrome](https://www.google.com/chrome/)
  - [Visual Studio Code](https://code.visualstudio.com/)
- - [node.js](https://nodejs.org/)
+ - [node.js](https://nodejs.org/), install via `npm install chromedriver --global`
  
 Then, `npm install` in this folder and open this folder in vscode.
 
