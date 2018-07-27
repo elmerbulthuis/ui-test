@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "dependsOn": [
+                "typescript",
+                "webpack"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "process",
+            "label": "webpack",
+            "command": "${workspaceRoot}/node_modules/.bin/webpack",
+            "args": [],
+            "group": "build",
+        },
+        {
+            "type": "typescript",
+            "label": "typescript",
+            "tsconfig": "tsconfig.json",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "group": "build",
+        },
+        {
+            "type": "typescript",
+            "label": "watch",
+            "tsconfig": "tsconfig.json",
+            "option": "watch",
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
+            "group": "build",
+            "isBackground": true
+        }
+    ]
+}
