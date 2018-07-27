@@ -15,7 +15,7 @@ cucumber.When(
 );
 
 cucumber.Then(
-    /^(blijf|kom) ik op de home pagina$/i,
+    /^(?:blijf|kom) ik op de home pagina$/i,
     async function () {
         const { testContext, bag } = this as TestWorld<PageBag>;
         const page = bag.page = bag.page!.to(automation.HomePageObject);

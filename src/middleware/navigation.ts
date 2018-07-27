@@ -8,7 +8,7 @@ export function createNavigationMiddleware(
     router: Router,
     history: History,
 ): Middleware<ApplicationState> {
-    return ({ dispatch }) => (next) => async (
+    return () => (next) => async (
         action:
             actions.GoBackAction |
             actions.NavigateAction |

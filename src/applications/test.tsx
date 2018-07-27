@@ -91,6 +91,7 @@ export class TestApplicationClient extends DisposableComposition {
     private createStore() {
         const middlewareList = new Array<Middleware>();
         middlewareList.push(
+            middleware.createBusyMiddleware(),
             middleware.createAuthorizationMiddleware(),
             middleware.createNavigationMiddleware(this.router, this.history),
         );

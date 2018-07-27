@@ -15,7 +15,9 @@ export function createAuthorizationMiddleware(): Middleware<ApplicationState> {
         switch (action.type) {
             case "login": {
                 await next(action);
-                delay(1 * second);
+
+                await delay(3 * second);
+
                 const { email, password } = action.payload;
                 if (email === "elmer@gameye.com" && password === "hupsakee") {
                     await dispatch(new actions.AuthorizedAction());
