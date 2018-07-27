@@ -23,7 +23,6 @@
     "@types/cucumber": "^4.0.4",
     "@types/koa-static-cache": "^5.1.0",
     "@types/selenium-webdriver": "^3.0.10",
-    "chromedriver": "^2.40.0",
     "css-loader": "^1.0.0",
     "cucumber": "^4.2.1",
     "koa-static-cache": "^5.1.2",
